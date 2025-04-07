@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HarkeAI - Hire Elite Tech Talent</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Navigation Bar -->
+  <header class="bg-gray-950 text-white shadow p-4 fixed w-full z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">HarkeAI</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="#" onclick="scrollToSection('hero')" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About Us</a>
+        <a href="#hire-talent" class="hover:text-blue-400">Hire Talent</a>
+        <a href="#courses" class="hover:text-blue-400">Courses</a>
+        <a href="#team" class="hover:text-blue-400">Our Team</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+        <a href="#" class="hover:text-blue-400">Login</a>
+        <a href="#" class="bg-blue-600 px-3 py-1 rounded hover:bg-blue-700">Signup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-900 to-black p-10">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hire Elite Tech Talent & Learn From the Best</h1>
+    <p class="text-lg md:text-2xl mb-8 text-gray-300">AI Experts, Ethical Hackers, Game Developers, and More.</p>
+    <div class="space-x-4">
+      <button onclick="document.getElementById('hire-talent').scrollIntoView({ behavior: 'smooth' })" class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 transition">Hire Talent</button>
+      <button onclick="document.getElementById('courses').scrollIntoView({ behavior: 'smooth' })" class="bg-green-500 px-6 py-3 rounded-full hover:bg-green-600 transition">Explore Courses</button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="p-10 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-4">About HarkeAI</h2>
+    <p class="text-gray-300 max-w-3xl">HarkeAI is your gateway to a future-driven tech space. Our mission is to connect world-class tech talent with companies and learners worldwide. Secure. Innovative. Elite.</p>
+  </section>
+
+  <!-- Services We Offer -->
+  <section id="services" class="p-10 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6">Services We Offer</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition">
+        💼 <h3 class="text-xl font-semibold">Hire AI Experts</h3>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition">
+        🕵️ <h3 class="text-xl font-semibold">Ethical Hackers</h3>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition">
+        🎮 <h3 class="text-xl font-semibold">Game Developers</h3>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition">
+        🧑‍💻 <h3 class="text-xl font-semibold">Full Stack Developers</h3>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl hover:bg-gray-600 transition">
+        📚 <h3 class="text-xl font-semibold">Advanced Tech Courses</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="p-10 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-6">Courses & Learning</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Mastering AI</h3>
+        <p>Learn from top AI experts. Real-world projects.</p>
+        <p class="text-sm text-yellow-400">Difficulty: Intermediate</p>
+        <p>⭐ 4.8</p>
+        <button class="mt-2 bg-green-600 px-4 py-2 rounded hover:bg-green-700">Enroll Now</button>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl">
+        <h3 class="text-xl font-semibold">Ethical Hacking 101</h3>
+        <p>Understand cybersecurity basics and more.</p>
+        <p class="text-sm text-yellow-400">Difficulty: Beginner</p>
+        <p>⭐ 4.7</p>
+        <button class="mt-2 bg-green-600 px-4 py-2 rounded hover:bg-green-700">Enroll Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Talent Section -->
+  <section id="hire-talent" class="p-10 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6">Hire Talent</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-gray-700 p-6 rounded-xl">
+        <img src="https://i.pravatar.cc/100" class="rounded-full mb-2" />
+        <h3 class="text-xl font-semibold">Alex - AI Expert</h3>
+        <p>Skills: Python, ML, TensorFlow</p>
+        <p>⭐ 4.9/5 from 120+ clients</p>
+        <button class="mt-2 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team -->
+  <section id="team" class="p-10 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-6">Our Team</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 p-6 rounded-xl text-center">
+        <img src="https://i.pravatar.cc/150" class="rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold">Riya Sharma</h3>
+        <p class="text-gray-300">Lead Developer</p>
+      </div>
+      <div class="bg-gray-700 p-6 rounded-xl text-center">
+        <img src="https://i.pravatar.cc/151" class="rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold">Jay Thapa</h3>
+        <p class="text-gray-300">Cybersecurity Head</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+    <form class="grid md:grid-cols-2 gap-4">
+      <input type="text" placeholder="Name" class="p-3 rounded bg-gray-700" />
+      <input type="email" placeholder="Email" class="p-3 rounded bg-gray-700" />
+      <textarea placeholder="Your Message" class="md:col-span-2 p-3 rounded bg-gray-700"></textarea>
+      <button class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 md:col-span-2">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 bg-black text-center text-gray-400">
+    <p>© 2025 HarkeAI. All Rights Reserved.</p>
+    <p>Email: contact@harkeai.com</p>
+    <p>Follow us: 🌐 Facebook | Twitter | LinkedIn</p>
+  </footer>
+  </main>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
